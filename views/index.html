@@ -26,26 +26,35 @@
         button:hover {
             background-color: #45a049;
         }
+        .cedula-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .cedula-container input {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
     <h1>BIENVENIDO A PET STORE</h1>
     <br><br><br>
 
-
     <div class="buttons-container">
         <a href="perro">
             <button>Sonido del perro</button>
         </a>
-        <a href="gato">
-            <button>Sonido del gato</button>
-        </a>
-        <a href="huron">
-            <button>Sonido del huron</button>
-        </a>
-        <a href="boa">
-            <button>Sonido de la boa</button>
-        </a>
+
+    </div>
+
+    <div class="cedula-container">
+        <form action="/enviar-cedula" method="POST">
+            <label for="cedula">Ingrese su número de cédula:</label><br><br>
+            <input type="text" id="cedula" name="cedula" placeholder="Número de cédula" required><br><br>
+            <button type="submit">Enviar cédula</button>
+        </form>
     </div>
 </body>
 </html>
